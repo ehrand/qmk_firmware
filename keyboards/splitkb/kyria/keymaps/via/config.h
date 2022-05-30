@@ -36,3 +36,11 @@
 #    define RGBLIGHT_VAL_STEP 8
 #    define RGBLIGHT_LIMIT_VAL 150
 #endif
+
+// ---------------------------------------------------------------------------------------
+
+// Modifications done by ehrand to customize kyria 2.1 (they may break other boards)
+
+// Some Pro Micro clones (especially the one used by me) fail to recognize
+// their couterparts. To fix this we need to define following macro.
+#define SPLIT_USB_DETECT

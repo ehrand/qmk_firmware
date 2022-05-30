@@ -34,3 +34,8 @@
 // Some Pro Micro clones (especially the one used by me) fail to recognize
 // their couterparts. To fix this we need to define following macro.
 #define SPLIT_USB_DETECT
+
+// EC11K encoders have a different resolution than other EC11 encoders.
+// When using the default resolution of 4, if you notice your encoder skipping
+// every other tick, lower the resolution to 2.
+#define ENCODER_RESOLUTION 2
